@@ -28,5 +28,4 @@ This website is designed to showcase the beauty of nature and wildlife using mod
 3. **Open the `index.html` file** in your browser to view the website.
 
 ## Screenshots
-![Screenshot](path_to_screenshot_image.png)
-*Description of home page with video background.*
+![Screenshot](https://github.com/DotSahilR/Nature-and-Wildlife/blob/main/img/op.png)
