@@ -1,4 +1,4 @@
-# Nature and Wildlife Website
+# Nature and Wildlife
 
 This website is designed to showcase the beauty of nature and wildlife using modern web development techniques, including **HTML**, **CSS**, and **JavaScript**. The goal is to create an immersive experience for users, making them feel closer to the natural world through interactive and visually appealing elements.
 
@@ -13,19 +13,6 @@ This website is designed to showcase the beauty of nature and wildlife using mod
 - **HTML**: For structuring the content.
 - **CSS**: For styling and creating the visual layout, including animations and transitions.
 - **JavaScript**: To handle dynamic interactivity, such as card clicks, animations, and effects like parallax scrolling.
-
-## How to Use
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/yourusername/nature-wildlife-website.git
-    ```
-
-2. **Navigate to the project folder**:
-    ```bash
-    cd nature-wildlife-website
-    ```
-
-3. **Open the `index.html` file** in your browser to view the website.
 
 ## Screenshots
 ![Screenshot](https://github.com/DotSahilR/Nature-and-Wildlife/blob/main/img/op.png)
