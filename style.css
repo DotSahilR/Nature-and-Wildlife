@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*Video CSS */
+
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif  ;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+  }
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  main {
+    position: relative;
+    height: 100vh;
+  }
+  
+  h5 {
+    font-weight: 1000;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 100px; 
+   }
+
+   .about p{
+    text-align:center ;
+    font-weight: 600;
+    font-size: 20px;
+   }
+
+
+
+  
+  main .about {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    z-index: 2;
+    color: white;
+
+  }
+  
+  .about a.discover {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 60px;
+    font-weight: 500;
+  }
+  
+
+  .about a.discover img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+
+
+    nav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        background: #0000003d;
+       }
+       nav .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        max-width: 90%;
+        margin: auto;
+       }
+       
+       nav .navbar .logo a{
+         color: #fff;
+         font-size: 27px;
+         font-weight: 600;
+         text-decoration: none;
+       }
+       nav .navbar .logo{
+        text-decoration: none;
+        align-items: center;
+        font-size: 20px;
+      
+       }
+      
+       .logo img{
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 80px;
+        margin-top: 16px;
+       }
+      
+       nav .navbar .menu{
+         display: flex;
+       }
+       .navbar .menu li{
+         list-style: none;
+         margin: 0 15px;
+       }
+       .navbar .menu li a{
+         color: #fff;
+         font-size: 17px;
+         font-weight: 500;
+         text-decoration: none;
+       }
+      
+
+       .parallax-1 {
+        background: url('img/para1.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 400px;
+      }
+
+      .parallax-2 {
+        background: url('img/para2.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 400px;
+      }
+
+
+
+
+
+
+
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 400px;
+  margin: 2px;
+  border-radius: 10px;
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 45px;
+}
+
+
+.info{  
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.info h2{
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.info p{
+  font-size: 20px;
+}
+
+
+.container-card {
+  display: flex;
+  width: 95vw;
+  padding: 60px;
+  padding-top: 20px;
+}
+
+.panel{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in ;
+}
+
+.panel h2 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h2 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+
+
+
+
+.mytabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 6px auto;
+  padding: 8px;
+}
+
+.mytabs input[type="radio"] {
+  display: none;
+}
+
+.mytabs label {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.mytabs .tab {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  order: 1;
+  display: none;
+
+}
+
+.mytabs input[type='radio']:checked+label+.tab {
+  display: block;
+}
+
+.mytabs input[type="radio"]:checked+label {
+  background: #fff;
+  border-bottom: 2px solid black;
+}
+
+
+.lists {
+  margin: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+  column-count: 3;
+  column-gap: 1em; 
+}
+
+.item {
+  position: relative; 
+  margin-bottom: 1em;
+}
+
+.lists .item img {
+  width: 100%;
+  display: block; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.info {
+  text-align: center; 
+  padding: 10px;
+}
+
+.info h3{
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
